@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- custom styles -->
+    <link href="css/style-plus.css" rel="stylesheet">
+    <style>
+        .md-form{
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark info-color fixed-top elegant-color">
+        <a class="navbar-brand" href="">
+            <img src="img/logo_musirawas_48.png" height="30" class="d-inline-block align-top" alt="">
+            <span style="font-size: 1rem; margin-left: 5px;">Integrated E-Planning</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse hide" id="navbarSupportedContent-4" style="">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Beranda</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pokok Pikiran</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="">Usulan Kegiatan</a>
+                        <a class="dropdown-item" href="">Hasil Verifikasi SKPD</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Rancangan Akhir (RKPD)</a>
+                </li>
+                <li class="nav-item dropdown jarak-akun">
+                    <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <i class="fa fa-user"></i> Akun </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+                        <a class="dropdown-item waves-effect waves-light" href="#">My account</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Log out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 90px;">
+
+        <h4 class="h4-reponsive">Akun -  NASIB</h4>
+        <p>Selamar Datang Di Integrated E-Planning Kabupaten Musi Rawas</p>
+
+        <div class="light-font">
+            <ol class="breadcrumb primary-color">
+                <li class="breadcrumb-item"><a class="white-text" href="#">Beranda</a></li>
+                <li class="breadcrumb-item"><a class="white-text" href="#">Pokok Pikiran</a></li>
+                <li class="breadcrumb-item"><a class="white-text" href="#">DPRD</a></li>
+                <li class="breadcrumb-item active">Usulan Kegiatan</li>
+            </ol>
+        </div>
+
+        <div class="row">
+            <div class="detail-frame">
+                <p style="margin-bottom: 0.5rem;">Silahkan Mencari Data Pokok Pikiran</p>
+                <span class="badge badge-primary padding-icon"><i class="fa fa-eye icon-badge" aria-hidden="true"></i>Melihat Data</span>
+                <span class="badge badge-warning padding-icon"><i class="fa fa-pencil icon-badge" aria-hidden="true"></i>Mengubah Data</span>
+                <span class="badge badge-danger padding-icon"><i class="fa fa-trash icon-badge" aria-hidden="true"></i>Menghapus Data</span>
+
+            </div>
+            <div class="button-frame">
+                    <button type="button" class="btn btn-success"><i class="fa fa-download icon-badge" aria-hidden="true"></i>Exel</button>
+                    <button type="button" class="btn btn-danger"><i class="fa fa-download icon-badge" aria-hidden="true"></i>PDF</button>
+                </div>
+        </div>
+
+        <div class="card" style="margin: 20px 0 30px 0; box-shadow: 0 1px 7px 0 rgba(0,0,0,.16), 0 1px 10px 0 rgba(0,0,0,.12);">
+            <div class="card-body" style="padding: 1rem;">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 label-frame">
+                            <p class="lavel-select">Tahun Anggaran</p>
+                            <form id="search-select">
+                                <!-- <select class="mdb-select">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select> -->
+                                <!-- <label>Example label</label> -->
+                                <span style="position:relative;">
+                                    <!-- <span class="arrow" ></span> -->
+                                    <span class="arrow">▼</span>
+                                <select id="menulist">
+                                    <option value="one">Semua</option>
+                                    <option value="two">2018</option>
+                                </select>
+                                </span>
+                                <hr class="my-2" style="border: 1px solid #CED4DA; margin-top: .2rem!important">
+                            </form>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <p class="lavel-select">SKPD Tujuan</p>
+                            <form id="search-select">
+                                <span style="position:relative;">
+                                    <span class="arrow">▼</span>
+                                <select id="menulist">
+                                    <option value="one">Semua</option>
+                                    <option value="two">Badan Pengelolaan Keuangan dan Aset Daerah</option>
+                                    <option value="one">Dinas Pertanian dan Peternakan</option>
+                                    <option value="one">Dinas Kesehatan</option>
+                                </select>
+                                </span>
+                                <hr class="my-2" style="border: 1px solid #CED4DA; margin-top: .2rem!important">
+                            </form>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <p class="lavel-select">Kategori Pokok Pikiran</p>
+                            <form id="search-select">
+                                <span style="position:relative;">
+                                    <span class="arrow">▼</span>
+                                <select id="menulist">
+                                    <option value="one">Semua</option>
+                                    <option value="one">Keseatan</option>
+                                    <option value="one">BPKAD</option>
+                                    <option value="two">Pangan</option>
+                                </select>
+                                </span>
+                                <hr class="my-2" style="border: 1px solid #CED4DA; margin-top: .2rem!important">
+                            </form>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12" style="display: flex; align-items: center; justify-content: center; padding: 0 !important;">
+                            <button type="button" class="btn btn-primary" style="padding: .64rem 1rem; margin: 0 !important;"><i class="fa fa-search icon-badge" aria-hidden="true"></i>Tampilkan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Material input -->
+            <div class="col-12">
+                <form class="form-inline md-form form-sm md-form-custom" style="float: left;">
+                    <i class="fa fa-search" aria-hidden="true" style="margin-right: 10px;"></i>
+                    <div class="md-form">
+                        <input type="text" id="form1" class="form-control">
+                        <label for="form1" >Cari...</label>
+                    </div>
+                </form>
+                <button type="button" class="btn elegant-color" style="padding: .64rem 1rem; margin: 0 !important; float: right;"><i class="fa fa-plus icon-badge" aria-hidden="true"></i>Usulan Kegiatan</button>
+            </div>
+        </div>  
+
+
+        <div class="table-responsive">
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col" style="width: 130px;">Tahun Anggaran</th>
+                <th scope="col" style="width: 120px;">Kategori Pokir</th>
+                <th scope="col">SKPD Tujuan</th>
+                <th scope="col">Isi Pokir</th>
+                <th scope="col" style="width: 150px;">Rekomendasi Pagu</th>
+                <th scope="col">Rekomendasi Lokasi</th>
+                <th scope="col" style="width: 150px; text-align: center;">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>2018</td>
+                <td>Pangan</td>
+                <td>Dinas Pertanian dan Peternakan</td>
+                <td>PENGADAAN BIBIT TANAMAN PERTAN ...</td>
+                <td>Rp. 9,000,000.00</td>
+                <td>KECAMATAN SELANGIT BARU JL. SU ...</td>
+                <td class="button-action">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Lihat"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Hapus"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>2018</td>
+                <td>Pangan</td>
+                <td>Dinas Pertanian dan Peternakan</td>
+                <td>PENGADAAN BIBIT TANAMAN PERTAN ...</td>
+                <td>Rp. 9,000,000.00</td>
+                <td>KECAMATAN SELANGIT BARU JL. SU ...</td>
+                <td class="button-action">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Lihat"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Hapus"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>2018</td>
+                <td>Pangan</td>
+                <td>Dinas Pertanian dan Peternakan</td>
+                <td>PENGADAAN BIBIT TANAMAN PERTAN ...</td>
+                <td>Rp. 9,000,000.00</td>
+                <td>KECAMATAN SELANGIT BARU JL. SU ...</td>
+                <td class="button-action">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Lihat"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Hapus"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <button type="button" class="btn btn-success" style="padding: .64rem 1rem; margin: 0 !important;">Prev</button>
+        <button type="button" class="btn btn-success" style="padding: .64rem 1rem; margin: 0 !important;">Next</button>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue" style="margin-top: 50px;">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        2018 © Bappeda Musi Rawas. All rights reserved<br>
+        Komplek Perkantoran Pemkab Musi Rawas Muara Beliti
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script>
+        // $(window).click(function () {
+        //     // alert($(this).text());
+        //     var text = $(event.target).text();
+        //     alert(text);
+        // });
+        // Tooltips Initialization
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+</body>
+
+</html>

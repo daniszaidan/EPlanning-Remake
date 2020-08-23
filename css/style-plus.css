@@ -1,0 +1,118 @@
+*{
+	/*border: 1px solid black;*/
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: 400;
+}
+.row{
+	position: relative;
+}
+.navbar-collapse ul li{
+	margin: 0 3px;
+}
+.badge{
+	font-size: 80%;
+	padding: .45em 7px;
+}
+.icon-badge{
+	margin-right: 7px;
+}
+.breadcrumb{
+	padding: .45rem 1rem;
+    margin-bottom: 1rem;
+}
+.light-font{
+	margin-bottom: 30px;
+}
+.light-font .breadcrumb-item + .breadcrumb-item::before {
+    color: #fff; 
+}
+.light-font .breadcrumb-item.active {
+    color: #cfd8dc; 
+}
+.button-right{
+	float: right;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}   
+.button-right button{
+	padding: .64rem 1.5rem;
+}
+.padding-icon{
+		
+}
+.custom-button i{
+	margin-right: 15px;
+}
+#search-select{
+	width: 100%;
+}
+#search-select select{
+	border: none;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#search-select select:focus{
+	outline: none;
+	width: 100%;
+}
+
+#menulist {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 32px;
+  border: 1px solid #000;
+  width: 100%;
+  text-indent: 8px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.arrow {
+  /*cursor: pointer;*/
+  position: absolute;
+  right: 0;
+  top: 5px;
+  padding-right: 5px; 
+  font-size: 0.8rem;
+  z-index: 1;
+  pointer-events: none;
+  color: #808080;
+}
+.lavel-select{
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.button-frame{
+	position: absolute;
+	right: 0;
+	padding-right: 15px;
+}
+.detail-frame{
+	padding-left: 15px;
+}
+.button-action button{
+	padding: 5px 10px;
+	float: left;
+	margin: 3px;
+}
+@media screen and (max-width: 770px) { 
+
+	.button-frame{
+		width: 100%;
+		position: relative;
+		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+	}
+	.detail-frame{
+		width: 100%;
+	}
+	.label-frame{
+		width: 100% !important;
+	}
+
+}
